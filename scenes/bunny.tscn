@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://ru7n7jf8q3tu"]
 
 [ext_resource type="Script" uid="uid://bvly65hu01tv6" path="res://scripts/bunny.gd" id="1_qn21b"]
-[ext_resource type="Texture2D" uid="uid://7fixijf0utn4" path="res://assets/bunny.png" id="1_u834r"]
+[ext_resource type="Texture2D" uid="uid://7fixijf0utn4" path="res://assets/game/bunny.png" id="1_u834r"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dvrf6"]
 radius = 50.0
