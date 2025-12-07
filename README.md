@@ -8,7 +8,6 @@
 
 > ⚠️ This project is still **in development**. New features and improvements are coming soon!
 
----
 
 ## 🚀 Features
 - Built with **Godot Engine**  
@@ -18,7 +17,6 @@
 - Simple controls and fast restart  
 - Clean, light visual style  
 
----
 
 ## 🛠️ Planned Features
 - Start menu / title screen  
