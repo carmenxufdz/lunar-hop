@@ -1,4 +1,6 @@
-# 🌙 Hoppy Moon
+![](https://github.com/carmenxufdz/hoppy-moon/blob/main/assets/game/banner.png)
+
+---
 
 ![Made with Godot](https://img.shields.io/badge/Made%20with-Godot-5399ff?style=flat-square)
 
@@ -25,7 +27,9 @@
 
 ---
 
-## 🎮 How to Play
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/hoppy-moon.git
+## Play Online
+Click the image below to play Hoppy Moon on Itch.io:  
+
+[![Play Pink Pong](https://github.com/carmenxufdz/hoppy-moon/blob/main/assets/game/cover.png)](https://alissea.itch.io/hoppy-moon)
+
+### Have fun playing Pink Pong!🩷
