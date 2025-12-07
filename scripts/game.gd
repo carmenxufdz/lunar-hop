@@ -15,10 +15,14 @@ var ground_height : int
 var screen_size : Vector2i
 var stars : Array
 
+var base_height := 720  # la altura original de tu juego (cámbiala si es otra)ç
+var scale_y
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	screen_size = get_window().size
+	screen_size = get_viewport().get_visible_rect().size
+	scale_y = screen_size.y / base_height
 	ground_height = $Floor/Ground.get_node("Floor").texture.get_height()
 	new_game()
 
@@ -69,7 +73,12 @@ func _on_star_timer_timeout() -> void:
 func generate_stars():
 	var star = star_scene.instantiate()
 	star.position.x = screen_size.x + STAR_DELAY
-	star.position.y = (screen_size.y - ground_height) / 2 + randi_range(-STAR_RANGE, STAR_RANGE)
+	
+	var mid_y = (screen_size.y - ground_height) / 2
+	var range_scaled = STAR_RANGE * scale_y
+	
+	star.position.y = mid_y + randi_range(-range_scaled, range_scaled)
+	
 	star.hit.connect(bunny_hit)
 	star.scored.connect(scored)
 	
@@ -77,7 +86,6 @@ func generate_stars():
 	stars.append(star)
 
 func check_top():
-	print($Bunny.position.y)
 	if $Bunny.position.y < 0:
 		$Bunny.falling = true
 		stop_game()
